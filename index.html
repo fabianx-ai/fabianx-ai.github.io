@@ -141,7 +141,7 @@
   <header>
     <h1>Fabian Franz</h1>
     <p class="role">Founder, Isomorphic AI</p>
-    <p class="lede">System architect. I look for the underlying blueprint of a system, whether it is a caching layer or a language model. I study where language models silently go wrong: leaked labels, lost retrieval, ignored self-report. I want to understand what a model's own reports say about its internal state. Before that I worked on the Linux kernel, wrote FreeNX, and built parts of Drupal's core infrastructure.</p>
+    <p class="lede">System architect. Solving complex problems is what I love and what I do best. I look for the underlying blueprint of a system, whether it is a caching layer or a language model. I study where language models silently go wrong: leaked labels, lost retrieval, ignored self-report. I want to understand what a model's own reports say about its internal state. Before that I worked on the Linux kernel, wrote FreeNX, and built parts of Drupal's core infrastructure.</p>
   </header>
 
   <section aria-labelledby="h-research">
@@ -197,8 +197,9 @@
   </section>
 
   <section aria-labelledby="h-tools">
-    <h2 id="h-tools">Tools</h2>
+    <h2 id="h-tools">Tools and demos</h2>
     <ol class="works">
+
       <li class="work">
         <div class="when">daily use</div>
         <div class="body">
@@ -207,11 +208,52 @@
           <div class="meta">Plain text · 27 lines</div>
         </div>
       </li>
+
+      <li class="work">
+        <div class="when">live demo</div>
+        <div class="body">
+          <h3><a href="https://huggingface.co/spaces/FabianxAI/hands-blinding-console">Two Hands Console</a></h3>
+          <p>A tiny story model I designed and trained, whose attention is two hands, each with five fingers and a wrist: twelve units in total, each with a flexor and an extensor. Blind muscles, fingers or a whole hand and read what the model says instead.</p>
+          <div class="meta">Unpublished work · 4 layers · 16 heads · 22 MB</div>
+        </div>
+      </li>
+
     </ol>
   </section>
 
-  <section aria-labelledby="h-systems">
-    <h2 id="h-systems">Systems and open source</h2>
+  <section aria-labelledby="h-drupal">
+    <h2 id="h-drupal">Drupal</h2>
+    <ol class="works">
+
+      <li class="work">
+        <div class="when">since 2009</div>
+        <div class="body">
+          <h3>Core maintainer and caching architecture</h3>
+          <p>Contributor since 2009 and core subsystem maintainer since 2013, today for BigPipe, Dynamic Page Cache, Page Cache and the Theme API. Drupal 7 core committer and branch maintainer from 2016 to 2025, when Drupal 7 reached end of life. In 2015, before the Drupal 8 release, I wrote the original proofs of concept and, with Wim Leers, architected its multi-tier render caching layer: cache metadata set anywhere on a page bubbles up, and the dynamic parts become placeholders. It was built to support BigPipe and also gave Drupal 8 its Dynamic Page Cache. Under the D8 Accelerate program I fixed many of the critical bugs that blocked the release.</p>
+          <div class="meta">Proofs of concept, 2015-02-18: <a href="https://gist.github.com/fabianx-ai/fef2568413569c13e952">SmartCache++</a> · <a href="https://gist.github.com/fabianx-ai/e8ffd028a3dde63b0492">SmartPlaceholderCache</a> · <a href="https://git.drupalcode.org/project/drupal/-/commit/5e8523ecb95f1530e80ea2d9929135ef9b3f8733">Dynamic Page Cache commit, Issue #2429617</a></div>
+          <div class="meta">Also: cache tag timestamps for Memcache (2018) · PhpArrayContainer, which powers Drupal's service container</div>
+        </div>
+      </li>
+
+      <li class="work">
+        <div class="when">2012 to 2025</div>
+        <div class="body">
+          <h3>Selected talks</h3>
+          <p>Regular DrupalCon speaker from 2012 to 2025.</p>
+          <div class="meta"><a href="https://www.youtube.com/watch?v=NHe9JtIp5fk">Making Drupal fly – The fastest Drupal ever is near!</a> with Wim Leers · Los Angeles 2015</div>
+          <div class="meta"><a href="https://www.youtube.com/watch?v=DMKD91jB58g">Making Drupal fly – The fastest Drupal ever is here!</a> with Wim Leers · Barcelona 2015</div>
+          <div class="meta"><a href="https://events.drupal.org/neworleans2016/sessions/bigpipe">BigPipe</a> with Wim Leers · New Orleans 2016</div>
+          <div class="meta"><a href="https://www.youtube.com/watch?v=RK4BG3hsN3I">Components everywhere! – Bridging the gap between backend and frontend</a> · Amsterdam 2019</div>
+          <div class="meta"><a href="https://youtu.be/479f7fvuTnA">Caching and performance deep dive – A practical approach</a> · Global 2020</div>
+          <div class="meta"><a href="https://www.youtube.com/watch?v=SdW8uJt9Rdc">AI Won't Steal Your Job—But It Will Make You (and Your Clients) Unstoppable</a> with Marco Molinari · Atlanta 2025</div>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-earlier">
+    <h2 id="h-earlier">Earlier work</h2>
     <ol class="works">
 
       <li class="work">
@@ -229,16 +271,6 @@
           <h3><a href="http://www.dcs.gla.ac.uk/conferences/resolve12/papers/session3_paper2.pdf">KSM++: Using I/O-based hints to make memory-deduplication scanners more efficient</a></h3>
           <p>The workshop paper that came before XLH, with the same group at KIT.</p>
           <div class="meta">RESoLVE 2012 · Miller, Franz, Groeninger, Rittinghaus, Hillenbrand, Bellosa</div>
-        </div>
-      </li>
-
-      <li class="work">
-        <div class="when">since 2009</div>
-        <div class="body">
-          <h3>Drupal</h3>
-          <p>Contributor since 2009 and core subsystem maintainer since 2013, today for BigPipe, Dynamic Page Cache, Page Cache and the Theme API. Drupal 7 core committer and branch maintainer from 2016 to 2025, when Drupal 7 reached end of life. In 2015, before the Drupal 8 release, I wrote the original proofs of concept and, with Wim Leers, architected its multi-tier render caching layer: cache metadata set anywhere on a page bubbles up, and the dynamic parts become placeholders. It was built to support BigPipe and also gave Drupal 8 its Dynamic Page Cache. Under the D8 Accelerate program I fixed many of the critical bugs that blocked the release.</p>
-          <div class="meta">Proofs of concept, 2015-02-18: <a href="https://gist.github.com/fabianx-ai/fef2568413569c13e952">SmartCache++</a> · <a href="https://gist.github.com/fabianx-ai/e8ffd028a3dde63b0492">SmartPlaceholderCache</a> · <a href="https://git.drupalcode.org/project/drupal/-/commit/5e8523ecb95f1530e80ea2d9929135ef9b3f8733">Dynamic Page Cache commit, Issue #2429617</a></div>
-          <div class="meta">Also: cache tag timestamps for Memcache (2018) · PhpArrayContainer, which powers Drupal's service container</div>
         </div>
       </li>
 
