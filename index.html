@@ -152,7 +152,7 @@
         <div class="when">2026-07</div>
         <div class="body">
           <h3><a href="https://zenodo.org/records/21261879">Anatomy of a Self-Assembled Acausal Receiver</a></h3>
-          <p>While training my own 20.72M-parameter language model, I traced validation results that the causal control could not reach to a normalizer that leaked future tokens past a correctly applied mask. I localized the exploit by head ablation and closed it with a per-row normalizer. A reward-hacking incident found, dissected and fixed end to end.</p>
+          <p>While training my own 20.72M-parameter language model, I traced validation results that the causal control could not reach to a normalizer that leaked future tokens past a correctly applied mask. I partly localized the exploit by head ablation and closed the channel with a per-row normalizer. A causality leak that the optimizer exploited, found, dissected and fixed end to end.</p>
           <div class="meta">Report · DOI 10.5281/zenodo.21261879 · scripts and results included</div>
         </div>
       </li>
@@ -161,7 +161,7 @@
         <div class="when">2026-06</div>
         <div class="body">
           <h3><a href="https://zenodo.org/records/20622917">From Leaky Bucket to Unsharp Lens: How Context Geometry Shapes Attention</a></h3>
-          <p>A behavioral study on MRCR v2. Prompt structure alone, with no weight changes, took 256k-token retrieval from 30.1% to 90.2%. Filler and corrupted-map controls are included, and the variants that hurt are reported.</p>
+          <p>A behavioral study on MRCR v2. Prompt structure alone, with no weight changes, took 256k-token retrieval from 30.1% to 90.2% on one model, DeepSeek V4 Flash; three other models were tested at shorter context lengths. Filler and corrupted-map controls are included, and the variants that hurt are reported.</p>
           <div class="meta">Working paper · DOI 10.5281/zenodo.20622917</div>
         </div>
       </li>
@@ -170,7 +170,7 @@
         <div class="when">2026-07</div>
         <div class="body">
           <h3><a href="https://zenodo.org/records/21265106">Conditioning, Not Length</a></h3>
-          <p>The theory behind the retrieval study: long-context failure as unreliable retrieval over information that is still present. I checked the decay model against 77 configurations from 27 model families.</p>
+          <p>The theory behind the retrieval study: long-context failure as unreliable retrieval over information that is still present. I fitted the decay model to public leaderboard scores: 77 configurations from 27 model families.</p>
           <div class="meta">Working paper · DOI 10.5281/zenodo.21265106</div>
         </div>
       </li>
@@ -179,7 +179,7 @@
         <div class="when">2026-06</div>
         <div class="body">
           <h3><a href="https://zenodo.org/records/20585634">Sameness Requires a Product: An Elementary Obstruction to Additive Matching</a></h3>
-          <p>Additive scoring cannot decide whether two symbols match; one bilinear term can. Lean-checked. The result came out of an open session with Claude, and a footnote in the paper states the exact division of work.</p>
+          <p>The framing and Lean formalization of a classical obstruction: additive scoring cannot decide whether two symbols match; one bilinear term can. The result came out of an open session with Claude, and a footnote in the paper states the exact division of work.</p>
           <div class="meta">Technical note · DOI 10.5281/zenodo.20585634 · Lean archive included</div>
         </div>
       </li>
@@ -204,7 +204,7 @@
         <div class="when">daily use</div>
         <div class="body">
           <h3><a href="https://github.com/isomorphic-ai/ai-emotions/blob/main/01-emotion/emotions.txt">The emotion prompt</a></h3>
-          <p>The prompt I use in every conversation. The model reports its internal signal as a number with a short description. The value shows over long-term use, which is how I learned to read it.</p>
+          <p>The prompt I use in every conversation. The model reports its internal signal as a number with a short description. I have used it daily since September 2025.</p>
           <div class="meta">Plain text · 27 lines</div>
         </div>
       </li>
