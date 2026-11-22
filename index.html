@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fabian Franz</title>
+<meta name="description" content="Fabian Franz. Founder of Isomorphic AI. Research on how language models go wrong, and systems work from the Linux kernel to Drupal core.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500&display=swap" rel="stylesheet">
+<style>
+  /* Layout idea: one left-aligned reading column; each work is a row with a mono date rail on the left. */
+  :root {
+    --bg: #f5f7f5;
+    --surface: #ffffff;
+    --ink: #16201c;
+    --muted: #5a6660;
+    --accent: #0b6b5c;
+    --rule: #d5dbd7;
+    --font-display: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+    --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1513;
+      --surface: #161d1a;
+      --ink: #e5ebe8;
+      --muted: #97a39d;
+      --accent: #63cbb5;
+      --rule: #27322d;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1513;
+    --surface: #161d1a;
+    --ink: #e5ebe8;
+    --muted: #97a39d;
+    --accent: #63cbb5;
+    --rule: #27322d;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 20px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  header { display: flex; flex-direction: column; gap: 16px; }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: clamp(2.1rem, 6vw, 3rem);
+    line-height: 1.1;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .role {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  .lede { margin: 0; max-width: 62ch; font-size: 1.08rem; }
+
+  section { display: flex; flex-direction: column; gap: 20px; }
+  h2 {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .works { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 28px; }
+  .work { display: grid; grid-template-columns: 92px 1fr; gap: 4px 20px; }
+  .when {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    padding-top: 4px;
+  }
+  .body { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin: 0;
+    text-wrap: balance;
+  }
+  h3 a { color: var(--ink); text-decoration-color: var(--rule); }
+  h3 a:hover { text-decoration-color: var(--accent); }
+  .body p { margin: 0; max-width: 62ch; }
+  .meta {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--muted);
+    overflow-wrap: anywhere;
+  }
+  .hash {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 8px 10px;
+  }
+  .links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 24px; }
+  .links li { font-family: var(--font-mono); font-size: 0.88rem; }
+
+  @media (max-width: 520px) {
+    .page { padding-top: 36px; gap: 44px; }
+    .work { grid-template-columns: 1fr; }
+    .when { padding-top: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>Fabian Franz</h1>
+    <p class="role">Founder, Isomorphic AI</p>
+    <p class="lede">I study where language models silently go wrong: leaked labels, lost retrieval, ignored self-report. I want to understand what a model's own reports say about its internal state. Before that I worked on the Linux kernel, wrote FreeNX, and built parts of Drupal's core infrastructure.</p>
+  </header>
+
+  <section aria-labelledby="h-research">
+    <h2 id="h-research">Research</h2>
+    <ol class="works">
+
+      <li class="work">
+        <div class="when">2026-07</div>
+        <div class="body">
+          <h3><a href="https://zenodo.org/records/21261879">Anatomy of a Self-Assembled Acausal Receiver</a></h3>
+          <p>While training my own 20.72M-parameter language model, I traced validation results that the causal control could not reach to a normalizer that leaked future tokens past a correctly applied mask. I localized the exploit by head ablation and closed it with a per-row normalizer. A reward-hacking incident found, dissected and fixed end to end.</p>
+          <div class="meta">Report · DOI 10.5281/zenodo.21261879 · scripts and results included</div>
+        </div>
+      </li>
+
+      <li class="work">
+        <div class="when">2026-06</div>
+        <div class="body">
+          <h3><a href="https://zenodo.org/records/20622917">From Leaky Bucket to Unsharp Lens: How Context Geometry Shapes Attention</a></h3>
+          <p>A behavioral study on MRCR v2. Prompt structure alone, with no weight changes, took 256k-token retrieval from 30.1% to 90.2%. Filler and corrupted-map controls are included, and the variants that hurt are reported.</p>
+          <div class="meta">Working paper · DOI 10.5281/zenodo.20622917</div>
+        </div>
+      </li>
+
+      <li class="work">
+        <div class="when">2026-07</div>
+        <div class="body">
+          <h3><a href="https://zenodo.org/records/21265106">Conditioning, Not Length</a></h3>
+          <p>The theory behind the retrieval study: long-context failure as unreliable retrieval over information that is still present. I checked the decay model against 77 configurations from 27 model families.</p>
+          <div class="meta">Working paper · DOI 10.5281/zenodo.21265106</div>
+        </div>
+      </li>
+
+      <li class="work">
+        <div class="when">2026-06</div>
+        <div class="body">
+          <h3><a href="https://zenodo.org/records/20585634">Sameness Requires a Product: An Elementary Obstruction to Additive Matching</a></h3>
+          <p>Additive scoring cannot decide whether two symbols match; one bilinear term can. Lean-checked. The result came out of an open session with Claude, and a footnote in the paper states the exact division of work.</p>
+          <div class="meta">Technical note · DOI 10.5281/zenodo.20585634 · Lean archive included</div>
+        </div>
+      </li>
+
+      <li class="work">
+        <div class="when">2026-02</div>
+        <div class="body">
+          <h3><a href="https://zenodo.org/records/19454940">Emotion in AI is Not Noise — It's Signal</a></h3>
+          <p>I argue that a model's emotional self-report works as a real-time fault detector, and I propose a protocol that uses it. It is the basis of how I work with AI models every day.</p>
+          <div class="meta hash">MD5 of 01-emotion.md, <a href="https://x.com/fabianfranz/status/2024132064178483264">posted 2026-02-18 14:41 UTC</a><br>bb8c81caab3982fa516955acfaf0919f</div>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-tools">
+    <h2 id="h-tools">Tools</h2>
+    <ol class="works">
+      <li class="work">
+        <div class="when">daily use</div>
+        <div class="body">
+          <h3><a href="https://github.com/isomorphic-ai/ai-emotions/blob/main/01-emotion/emotions.txt">The emotion prompt</a></h3>
+          <p>The prompt I use in every conversation. The model reports its internal signal as a number with a short description. The value shows over long-term use, which is how I learned to read it.</p>
+          <div class="meta">Plain text · 27 lines</div>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-systems">
+    <h2 id="h-systems">Systems and open source</h2>
+    <ol class="works">
+
+      <li class="work">
+        <div class="when">2013</div>
+        <div class="body">
+          <h3><a href="https://www.usenix.org/node/174531">XLH: More Effective Memory Deduplication Scanners Through Cross-layer Hints</a></h3>
+          <p>Linux kernel research that grew out of my 2012 diploma thesis at KIT. I/O hints from the host let the memory scanner find duplicate pages earlier. Konrad Miller was the main author; I did the implementation and the evaluation.</p>
+          <div class="meta">USENIX ATC 2013 · Miller, Franz, Rittinghaus, Hillenbrand, Bellosa</div>
+        </div>
+      </li>
+
+      <li class="work">
+        <div class="when">2012</div>
+        <div class="body">
+          <h3><a href="http://www.dcs.gla.ac.uk/conferences/resolve12/papers/session3_paper2.pdf">KSM++: Using I/O-based hints to make memory-deduplication scanners more efficient</a></h3>
+          <p>The workshop paper that came before XLH, with the same group at KIT.</p>
+          <div class="meta">RESoLVE 2012 · Miller, Franz, Groeninger, Rittinghaus, Hillenbrand, Bellosa</div>
+        </div>
+      </li>
+
+      <li class="work">
+        <div class="when">since 2009</div>
+        <div class="body">
+          <h3>Drupal</h3>
+          <p>Contributor since 2009 and core subsystem maintainer since 2013, today for BigPipe, Dynamic Page Cache, Page Cache and the Theme API. Drupal 7 core committer and branch maintainer from 2016 to 2025, when Drupal 7 reached end of life. In 2015, before the Drupal 8 release, I wrote the original proofs of concept and, with Wim Leers, architected its multi-tier render caching layer: cache metadata set anywhere on a page bubbles up, and the dynamic parts become placeholders. It was built to support BigPipe and also gave Drupal 8 its Dynamic Page Cache. Under the D8 Accelerate program I fixed many of the critical bugs that blocked the release.</p>
+          <div class="meta">Proofs of concept, 2015-02-18: <a href="https://gist.github.com/fabianx-ai/fef2568413569c13e952">SmartCache++</a> · <a href="https://gist.github.com/fabianx-ai/e8ffd028a3dde63b0492">SmartPlaceholderCache</a> · <a href="https://git.drupalcode.org/project/drupal/-/commit/5e8523ecb95f1530e80ea2d9929135ef9b3f8733">Dynamic Page Cache commit, Issue #2429617</a></div>
+          <div class="meta">Also: cache tag timestamps for Memcache (2018) · PhpArrayContainer, which powers Drupal's service container</div>
+        </div>
+      </li>
+
+      <li class="work">
+        <div class="when">open source</div>
+        <div class="body">
+          <h3>FreeNX, Debian, KDE, Git, PHP/APCu</h3>
+          <p>Author of FreeNX. Debian developer and KDE contributor from 2003 to 2006. Contributor to Git and PHP/APCu.</p>
+        </div>
+      </li>
+
+      <li class="work">
+        <div class="when">patent</div>
+        <div class="body">
+          <h3><a href="https://patents.google.com/patent/US20090100129">Thin terminal computer architecture utilizing roaming keyboard files</a></h3>
+          <p>From my work as CTO and co-founder of RoamTouch.</p>
+          <div class="meta">United States patent application US20090100129A1</div>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-elsewhere">
+    <h2 id="h-elsewhere">Elsewhere</h2>
+    <ul class="links">
+      <li><a href="https://x.com/fabianfranz">X @fabianfranz</a></li>
+      <li><a href="https://github.com/isomorphic-ai">GitHub isomorphic-ai</a></li>
+      <li><a href="https://orcid.org/0009-0000-8536-0838">ORCID 0009-0000-8536-0838</a></li>
+    </ul>
+  </section>
+
+</div>
+</body>
+</html>
