@@ -1,7 +1,14 @@
 title: Fabian Franz
+description: Essays by Fabian Franz and Claude.
+url: https://fabianx-ai.github.io
+author: Fabian Franz
 markdown: kramdown
 kramdown:
   input: GFM
 permalink: /essays/:title/
+plugins:
+  - jekyll-feed
+feed:
+  path: feed.xml
 exclude:
   - README.md

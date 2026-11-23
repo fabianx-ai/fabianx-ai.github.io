@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fabian Franz</title>
 <meta name="description" content="Fabian Franz. Founder of Isomorphic AI. Research on how language models go wrong, and systems work from the Linux kernel to Drupal core.">
+{% feed_meta %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500&display=swap" rel="stylesheet">
@@ -207,7 +208,7 @@
         <div class="body">
           <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
           {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-          {% if post.authors %}<div class="meta">{{ post.authors }}</div>{% endif %}
+          {% if post.author %}<div class="meta">{{ post.author }}</div>{% endif %}
         </div>
       </li>
 {% endfor %}
