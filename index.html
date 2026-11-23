@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -194,6 +196,23 @@
       </li>
 
     </ol>
+  </section>
+
+  <section aria-labelledby="h-essays">
+    <h2 id="h-essays">Essays</h2>
+    <ol class="works">
+{% for post in site.posts limit:5 %}
+      <li class="work">
+        <div class="when">{{ post.date | date: "%Y-%m-%d" }}</div>
+        <div class="body">
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+          {% if post.authors %}<div class="meta">{{ post.authors }}</div>{% endif %}
+        </div>
+      </li>
+{% endfor %}
+    </ol>
+    <p class="meta"><a href="/essays/">All essays</a></p>
   </section>
 
   <section aria-labelledby="h-tools">

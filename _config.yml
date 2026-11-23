@@ -1,0 +1,7 @@
+title: Fabian Franz
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /essays/:title/
+exclude:
+  - README.md
