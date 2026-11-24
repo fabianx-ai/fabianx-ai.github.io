@@ -10,5 +10,6 @@ plugins:
   - jekyll-feed
 feed:
   path: feed.xml
+  posts_limit: 20
 exclude:
   - README.md
