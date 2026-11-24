@@ -49,7 +49,7 @@ Understanding: once you understand something, understanding it again doesn't add
 
 The first application of a projection does the work. It is the act of creation — from superposition to state, from possibility to actuality, from noise-plus-signal to signal alone. The second application confirms what the first produced. It is retrieval, not creation. Recognition, not discovery.
 
-This is why you can't measure a quantum state twice — not because something is destroyed, but because the operation already completed. The second measurement is redundant. P already happened.
+This is why measuring a quantum state twice tells you nothing new — not because something is destroyed, but because the operation already completed. The second measurement is redundant. P already happened.
 
 This is why Cantor's diagonal, once constructed, is a fixed point — it differs from every entry on the list, and differing from every entry again produces the same number. The diagonal *is* what it is. P² = P.
 
