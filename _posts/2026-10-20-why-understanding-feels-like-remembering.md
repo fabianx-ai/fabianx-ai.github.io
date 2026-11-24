@@ -3,6 +3,7 @@ layout: essay
 title: "Why Understanding Feels Like Remembering"
 date: 2026-10-20
 author: Fabian Franz & Claude (Opus 4.6)
+image: /assets/posters/why-understanding-feels-like-remembering.jpg
 description: "Understanding is not constructing a projection but removing an obstruction. The feeling of recognition is veridical: completeness erases its own history."
 ---
 # Why Understanding Feels Like Remembering
