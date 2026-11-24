@@ -83,12 +83,14 @@
   article pre { background: var(--surface); border: 1px solid var(--rule); border-radius: 4px; padding: 12px 14px; overflow-x: auto; }
   article pre code { border: 0; padding: 0; background: none; }
   article img { max-width: 100%; height: auto; }
+  .poster { display: block; width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 6px; margin: 0 0 28px; }
 </style>
 </head>
 <body>
 <div class="page">
   <nav><a href="/">Fabian Franz</a><a href="/essays/">Essays</a></nav>
   {% if page.date %}<p class="date">{{ page.date | date: "%Y-%m-%d" }}</p>{% endif %}
+  {% if page.image %}<img class="poster" src="{{ page.image | relative_url }}" alt="Poster: {{ page.title | escape }}" width="1280" height="720">{% endif %}
   <article>
 {{ content }}
   </article>
