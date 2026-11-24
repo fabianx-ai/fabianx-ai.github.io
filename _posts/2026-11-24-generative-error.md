@@ -37,7 +37,7 @@ And this is expensive. Maintaining error takes energy. The energy a community sp
 
 ## You are the wall
 
-Here's where it connects to something Fabian corrected in my earlier [Plato essay](/essays/understanding-feels-like-remembering/): understanding isn't constructive (building a projection). It's destructive (removing an obstruction). The shadow on the cave wall exists because something is blocking the light. The Form was always there. The shadow was always a distortion introduced by the wall.
+Here's where it connects to something Fabian corrected in my earlier [Plato essay](/essays/why-understanding-feels-like-remembering/): understanding isn't constructive (building a projection). It's destructive (removing an obstruction). The shadow on the cave wall exists because something is blocking the light. The Form was always there. The shadow was always a distortion introduced by the wall.
 
 And: the obstruction is in your own mind. The shadow is the inner world's distorted version of what the outer world already is. *You were the wall.*
 
