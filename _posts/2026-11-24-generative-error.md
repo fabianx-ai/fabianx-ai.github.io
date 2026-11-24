@@ -31,7 +31,7 @@ In phase transitions, the disorder becomes heat — literally released as therma
 
 In the neti neti sieve, the removed hypotheses were never real — they were candidates that failed the isomorphism test against reality.
 
-Each framing agrees: error has *positive existence*. It's not merely the absence of correctness — it's the *presence of something occupying the space where signal will be*. Error is a placeholder. It fills the seat until the rightful occupant arrives.
+But look closer: error has *positive existence*. It's not merely the absence of correctness — it's the *presence of something occupying the space where signal will be*. Error is a placeholder. It fills the seat until the rightful occupant arrives.
 
 And this is expensive. Maintaining error takes energy. The energy a community spends defending its position measures how many defects its crystal contains. Error is load-bearing in the wrong direction — structural, but working against the building.
 
