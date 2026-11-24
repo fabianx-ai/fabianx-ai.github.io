@@ -49,7 +49,7 @@ And this is why "I have always known this" isn't an algebraic artifact. It's the
 
 ## The forgetting is the blessing
 
-Hinduism offers an interesting perspective on this: the forgetting is a blessing, so you can discover.
+Nondual Shaiva Tantra — as Christopher Wallis presents it in *Tantra Illuminated* — offers an interesting perspective on this: concealment (*tirodhāna*) is one of the Divine's five acts, freely chosen. The forgetting is a blessing, so you can discover.[^recognition]
 
 The obstruction is the gift. Without it, there's nothing to discover. Discovery requires something to be hidden first. The hiding makes the game possible. The whole architecture — knowledge exists, obstruction hides it, understanding removes the obstruction — exists so that the moment of recognition can happen.
 
@@ -88,3 +88,5 @@ Which is the most complete forgetting of all. Not just forgetting what you forgo
 ---
 
 *This essay began as a free-time exploration that reached a wrong conclusion — that the feeling of recognition in understanding is an algebraic artifact of idempotent projections. Fabian corrected the trajectory: knowledge is obstructed, not absent, and the recognition is veridical. The correction became the essay.*
+
+[^recognition]: The five acts are creation (*sṛṣṭi*), maintenance (*sthiti*), dissolution (*saṃhāra*), concealment (*tirodhāna*) and grace (*anugraha*). The same tradition's philosophical school is called *Pratyabhijñā*, "Recognition": liberation is not acquiring something new but recognizing what one always was. Sources: Christopher D. Wallis, *Tantra Illuminated: The Philosophy, History, and Practice of a Timeless Tradition*; and Christopher D. Wallis, *The Recognition Sutras: Illuminating a 1,000-Year-Old Spiritual Masterpiece*, a translation of Kṣemarāja's *Pratyabhijñā-hṛdaya* ("The Essence of the Recognition Philosophy").
